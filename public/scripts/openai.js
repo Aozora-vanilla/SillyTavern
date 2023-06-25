@@ -1885,7 +1885,6 @@ function onModelChange() {
     if ($(this).is('#model_claude_select')) {
         console.log('Claude model changed to', value);
         oai_settings.claude_model = value;
-        //setupOpenAIPromptManager(openai_settings);
     }
 
     if ($(this).is('#model_windowai_select')) {
@@ -1896,7 +1895,6 @@ function onModelChange() {
     if ($(this).is('#model_openai_select')) {
         console.log('OpenAI model changed to', value);
         oai_settings.openai_model = value;
-        setupOpenAIPromptManager(openai_settings);
     }
 
     if (oai_settings.chat_completion_source == chat_completion_sources.CLAUDE) {
